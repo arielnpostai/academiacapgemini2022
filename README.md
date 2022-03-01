@@ -1,2 +1,2 @@
 # academiacapgemini2022
-Todas as questôes estão em linguegem Java
+Todas as questões estão em linguegem Java
