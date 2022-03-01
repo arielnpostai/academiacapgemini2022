@@ -1,0 +1,47 @@
+package br.com.capgemini.desafio.funcoes;
+
+import java.util.Scanner;
+
+public class QuestaoUm {
+
+public static void main(String[] args) {
+	/**
+	 * Método main chama o método montaEscada() e retorna sua resposta;
+	 * 
+	 * @param int numero define a quantide de linhas(*) que formarão a escada
+	 * @return String escadaMontada retorna o desenho da escada
+	 */
+	int numero;
+	String escadaMontada;
+	Scanner scanner = new Scanner(System.in);
+
+	System.out.print("Digite um tamanho numérico para forma sua escada: ");
+	numero = scanner.nextInt();
+	escadaMontada = montaEscada(numero);
+
+	System.out.println(escadaMontada);
+
+}
+
+public static String montaEscada(int numero) {
+	/**
+	 * Método montaEscada() realiza um laço for através do iterador a, que é o
+	 * responsável por verificar qual linha da escada esta sendo construida e
+	 * adicionar espaços e asteriscos até que o tamanho final seja atingido.
+	 * 
+	 * @return String escada retorna o desenho da escada
+	 * 
+	 * O método repeat() é usado para retornar String cujo valor é a concatenação de
+	 * determinadas vezes de contagem repetida de String.
+
+	 */
+	int a;
+	String escada = "";
+
+	for (a = 1; a <= numero; a++) {
+		escada += " ".repeat(numero - a) + "*".repeat(a) + "\n";
+	}
+
+	return escada;
+    }
+    }
