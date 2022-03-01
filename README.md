@@ -1,2 +1,4 @@
 # academiacapgemini2022
-Todos as Questoes estão em linguegem Java 
+Todas as questôes estão em linguegem Java
+Att
+Ariel N. Postai 
